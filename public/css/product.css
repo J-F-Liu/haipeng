@@ -1,0 +1,62 @@
+#Prcontent{
+	width: 			1000px;
+	margin: 		0px auto;
+}
+#item{
+	margin:			0px 100px 0px 0px;
+	width: 			200px;
+	height: 		1000px;
+	float: 			left;
+}
+#item ul{
+	border: 1px solid rgba(0,0,0,0.2);
+}
+#item ul li{
+	list-style-type: none;
+	padding-left: 	30px;
+	padding-top:    10px;
+	padding-bottom: 10px;
+	margin-bottom:  2px;
+
+}
+#item ul li a{
+	
+}
+#item li a:link,a:visited{
+	text-decoration: none;
+	color: 			rgba(0,0,0,0.7);
+}
+#item li a:hover,a:active{
+	color: 			#ec6f31;
+}
+#item ul li#catalog{
+	background-color: #ec6f31;
+}
+#item ul li#catalog a{
+	color: 			#ffffff;
+	font-weight: 	bolder;
+	letter-spacing: 	10px;
+}
+#item ul li.main{
+	background-color: #e8e9e7;
+}
+#abstract{
+	width: 			690px;
+	float: 			left;
+}
+.star{
+	float: 				left;
+	margin:             0px 8px;
+}
+h3{
+	color: 				#ec6f31;
+}
+p{
+	line-height: 		40px;
+}
+.title{
+	margin: 			100px 0px 20px 5px;
+}
+.title1{
+	margin-top: 		10px;
+}

@@ -1,0 +1,147 @@
+.carousel-indicators {
+  bottom: 6px;
+}
+
+.carousel-indicators .active {
+  background-color: #43A0DA;
+}
+
+.carousel-indicators li {
+  border: 1px solid #43A0DA;
+}
+
+*{
+	margin:				0px;
+	padding: 			0px;
+}
+a img {
+  border: none;
+}
+body{
+	background-color: #ffffff;
+  font-size: medium;
+	font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif,"宋体";
+}
+#container{
+	width: 100%;
+}
+#header{
+	width: 1200px;
+	height: 80px;
+	margin: 0 auto;
+}
+#logo_img{
+	height: 100%;
+	margin: 0 40px;
+	float: left;
+}
+#lang{
+	position: absolute;
+	font-size: xx-small;
+	top: 10px;
+	right: 10px;
+	color: rgba(0,0,0,0.5);
+}
+#nav_bar li:hover, #nav_bar li.selected{
+	background-color: #145F34;
+}
+#nav{
+	display: inline-block;
+	height: 100%;
+	float: right;
+}
+#nav_bar{
+	display: inline-block;
+	height: 100%;
+}
+#nav_bar li{
+	float: left;
+	display: inline-block;	
+	height: 100%;
+}
+#nav_bar li a{
+	display: 			block;
+	margin-top: 		20px;
+	margin-bottom: 	10px;
+	text-align: center;
+	border-right: 1px dashed #4C4C4C;
+	font-family: "Microsoft YaHei";
+}
+#nav_bar li.selected a,#nav_bar li:last-child a{
+	border-right: none;
+}
+#nav_bar li a:link,a:visited{
+	text-decoration:    none;
+}
+#nav_bar li a:hover .Ch_item{
+	color: #ffffff;
+}
+#nav_bar li.selected .Ch_item{
+	color: #ffffff;
+}
+#nav_bar li.selected .En_item{
+	color: #ffffff;
+}
+.Ch_item{
+	font-size: 110%;
+	margin: 0 1em;
+	letter-spacing: 2px;
+	color: #545656;
+}
+.En_item{
+	font-size: 50%;
+	margin: 2px 1em;
+	color: #67A3D5;
+}
+#slogan{
+	max-width: 1920px;
+	width: 100%;
+	margin: 0 auto;
+}
+#slogan img{
+	width: 100%;
+}
+
+/*.page{
+  width: 1200px;
+  margin: 0 auto;
+}*/
+
+/*h3.star {
+	background-image: url(../image/star.png);
+	background-repeat: no-repeat;
+	padding-left: 26px;
+}*/
+
+#footer{
+	width: 100%;
+	background-color: 	#155E33;
+	margin-top: 20px;
+	padding: 40px 0;
+	clear: 		both;
+}
+#footer ul{
+	display: block;
+	width: 100%;
+	padding: 0;
+	margin: 0 auto;	
+	text-align: center;
+}
+#footer ul li{
+	display: inline-block;
+}
+#footer ul li a{
+	color: #ffffff;
+	font-size: 80%;
+	display: block;
+	width: 5em;
+	padding: 0 2px 0 0;
+	line-height: 1em;
+	border-right: 1px dashed #ffffff;
+}
+#footer ul li:last-child a{
+	border-right: none;
+}
+#footer ul li a:link,a:visited{
+	text-decoration: 	none;
+}

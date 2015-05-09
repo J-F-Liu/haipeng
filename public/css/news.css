@@ -1,0 +1,80 @@
+#Macontent{
+	width: 			1000px;
+	margin: 		0px auto;
+}
+#item{
+	margin:			0px 100px 0px 0px;
+	width: 			200px;
+	height: 		200px;
+	border: 		1px solid rgba(0,0,0,0.2);
+	float: 			left;
+}
+#item ul li{
+	list-style-type: none;
+	padding-left: 	30px;
+	padding-top:    10px;
+	padding-bottom: 10px;
+	margin-bottom:  2px;
+
+}
+#item ul li a{
+	
+}
+#item li a:link,a:visited{
+	text-decoration: none;
+	color: 			rgba(0,0,0,0.7);
+}
+#item li a:hover,a:active{
+	color: 			#ec6f31;
+}
+#item ul li#catalog{
+	background-color: #ec6f31;
+}
+#item ul li#catalog a{
+	color: 			#ffffff;
+	font-weight: 	bolder;
+	letter-spacing: 	10px;
+}
+
+#abstract{
+	width: 			690px;
+	float: 			left;
+}
+.star{
+	float: 				left;
+	margin:             0px 8px;
+}
+h3{
+	color: 				#ec6f31;
+}
+#News p{
+	line-height: 		40px;
+}
+.title{
+	margin: 			0px 0px 20px 5px;
+	clear: 				both;
+	padding-top: 		100px;
+}
+.title1{
+	margin-top: 		10px;
+}
+#News{
+	margin-top:			20px;
+	margin-left: 		40px; 
+}
+#customer{
+	margin-left: 		100px;
+}
+.cus_mess{
+	color: 				#ec6f31;
+	margin-top: 		15px;
+	float: 				left;
+	clear: 				both;			
+}
+.mess{
+	width: 				120px;
+	height: 			40px;
+	background-color: 	#ec6f31;
+	margin: 			5px;
+	float: 				left;
+}

@@ -1,0 +1,49 @@
+#page{
+	width: 				950px;
+	margin: 			100px auto;
+	letter-spacing: 	1px;
+}
+.star{
+	float: 				left;
+	margin:             0px 5px;
+}
+h3{
+	color: 				#ec6f31;
+}
+p{
+	text-indent: 		2em;
+	font-size: 			110%;
+	line-height: 		45px;
+}
+#table #title{
+	width: 				950px;
+	margin: 			10px auto;
+	padding-left: 		400px;
+}
+
+table{
+	margin: 			30px auto;
+	border-collapse: 	separate;
+	border-spacing:		50px 50px;		
+}
+table td {
+	border-spacing: 	20px;
+	color: 				#ffffff;
+	font-width: 		bolder;
+}
+.Fline{
+	background-color: 	#ec6f31;
+	padding-top: 		20px;
+	padding-bottom: 	20px;
+	padding-left:       40px;
+	padding-right: 		40px;
+	border-radius: 		10px;
+}
+.Sline{
+	background-color: 	#3da1da;
+	padding-top: 		20px;
+	padding-bottom: 	20px;
+	padding-left:       100px;
+	padding-right: 		100px;
+	border-radius: 		25px;
+}

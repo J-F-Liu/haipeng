@@ -1,0 +1,22 @@
+{
+  "name": "haipeng",
+  "version": "0.1.0",
+  "authors": [
+    "Junfeng Liu <china.liujunfeng@gmail.com>",
+    "Hunter-xh <413424704@qq.com>"
+  ],
+  "moduleType": [
+    "es6"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-css": "~3.3.4"
+  }
+}

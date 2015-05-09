@@ -1,0 +1,8 @@
+{
+  "name": "Haipeng-website",
+  "description": "Install jake and browser-sync globally. Run `jake` to generate html files.",
+  "version": "0.1.0",
+  "dependencies": {
+    "handlebars": "^3.0.1"
+  }
+}

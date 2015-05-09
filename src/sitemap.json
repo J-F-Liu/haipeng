@@ -1,0 +1,29 @@
+{
+  "pages": [
+    {
+      "name": "home",
+      "cn_text": "首页",
+      "en_text": "Home"
+    },
+    {
+      "name": "about",
+      "cn_text": "关于我们",
+      "en_text": "About Us"
+    },
+    {
+      "name": "product",
+      "cn_text": "产品介绍",
+      "en_text": "Product Introduction"
+    },
+    {
+      "name": "news",
+      "cn_text": "最新动态",
+      "en_text": "Latest News"
+    },
+    {
+      "name": "contact",
+      "cn_text": "联系我们",
+      "en_text": "Contact Us"
+    }
+  ]
+}

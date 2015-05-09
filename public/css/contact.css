@@ -1,0 +1,25 @@
+#contact{
+	width: 				800px;
+	margin: 			20px auto;
+	padding-bottom: 	400px;
+}
+#title{
+	margin-bottom: 		20px;
+}
+.star{
+	float: 				left;
+	margin:             0px 5px;
+}
+h3{
+	color: 				#ec6f31;
+}
+
+img#hello{
+	float: 				left;
+}
+#message{
+	margin-left: 		400px;
+}
+p{
+	line-height: 		40px;
+}

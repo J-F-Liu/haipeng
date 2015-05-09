@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>{{page.cn_text}} - 慧营科技</title>
+  <link type="text/css" rel="stylesheet" href="/bower_components/bootstrap-css/css/bootstrap.css">
+  <link type="text/css" rel="stylesheet" href="css/site.css">
+  <link type="text/css" rel="stylesheet" href="css/{{page.name}}.css">
+</head>
+<body>
+  <div id="container">
+    <div id="header">
+      <a href="/"><img id="logo_img" src="image/logo.png" alt="慧营科技"></a>
+      <div id="nav">
+        <ul id="nav_bar">
+        {{#each site.pages}}
+          <li{{#if isCurrent}} class="selected"{{/if}}>
+            <a href="{{name}}.html">
+              <div class="Ch_item">{{cn_text}}</div>
+              <div class="En_item">{{en_text}}</div>
+            </a>
+          </li> 
+        {{/each}}     
+        </ul>
+        <div id="lang">EN/中文</div>
+      </div>
+    </div>
+    {{> content }}
+    <div id="footer">
+      <ul>
+        <li><a href="contact.html">联系我们</a></li>
+        <li><a href="contact.html">客户反馈</a></li>
+        <li><a href="contact.html">诚聘英才</a></li>
+        <li><a href="#">官方微博</a></li>
+      </ul>
+    </div>
+  </div>
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/bower_components/bootstrap-css/js/bootstrap.min.js"></script>
+</body>
+</html>
