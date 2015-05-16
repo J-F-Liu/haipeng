@@ -124,23 +124,23 @@ body{
 	margin-top: 20px;
 	padding: 40px 0;
 	clear: 		both;
+	text-align: center;
 }
 #footer ul{
-	display: block;
-	width: 100%;
+	display: inline-block;
 	padding: 0;
 	margin: 0 auto;	
 	text-align: center;
 }
 #footer ul li{
 	display: inline-block;
+	float: left;
 }
 #footer ul li a{
 	color: #ffffff;
 	font-size: 80%;
 	display: block;
-	width: 5em;
-	padding: 0 2px 0 0;
+	padding: 0 1em;
 	line-height: 1em;
 	border-right: 1px dashed #ffffff;
 }
