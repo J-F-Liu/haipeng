@@ -17,8 +17,9 @@ get '/info' do
 end
 
 get '/update' do
+  `git pull` +
   `jake html` +
-  'updateed'
+  'updated'
 end
 
 get '/restart' do
