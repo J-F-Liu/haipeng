@@ -7,7 +7,7 @@ get "/" do
   redirect 'home.html'
 end
 
-get :info do
+get '/info' do
   [
     `cat /etc/redhat-release`,
     `uname -r`,
@@ -16,12 +16,12 @@ get :info do
   ].join('<br>')
 end
 
-get :update do
+get '/update' do
   `jake html` +
   'updateed'
 end
 
-get :restart do
+get '/restart' do
   `git pull` +
   `touch tmp/restart.txt` +
   'restarted'
