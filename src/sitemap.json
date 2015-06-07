@@ -3,27 +3,37 @@
     {
       "name": "home",
       "cn_text": "首页",
-      "en_text": "Home"
+      "en_text": "Home",
+      "showInNav": true
     },
     {
       "name": "about",
       "cn_text": "关于我们",
-      "en_text": "About Us"
+      "en_text": "About Us",
+      "showInNav": true
     },
     {
       "name": "product",
       "cn_text": "产品介绍",
-      "en_text": "Product Introduction"
+      "en_text": "Product Introduction",
+      "showInNav": true
+    },
+    {
+      "name": "storage",
+      "cn_text": "仓储体系",
+      "en_text": "Our Storage"
     },
     {
       "name": "news",
       "cn_text": "最新动态",
-      "en_text": "Latest News"
+      "en_text": "Latest News",
+      "showInNav": true
     },
     {
       "name": "contact",
       "cn_text": "联系我们",
-      "en_text": "Contact Us"
+      "en_text": "Contact Us",
+      "showInNav": true
     }
   ]
 }

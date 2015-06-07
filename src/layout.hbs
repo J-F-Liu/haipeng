@@ -25,12 +25,14 @@ var _hmt = _hmt || [];
       <div id="nav">
         <ul id="nav_bar">
         {{#each site.pages}}
+          {{#if showInNav}}
           <li{{#if isCurrent}} class="selected"{{/if}}>
             <a href="{{name}}.html">
               <div class="Ch_item">{{cn_text}}</div>
               <div class="En_item">{{en_text}}</div>
             </a>
-          </li> 
+          </li>
+          {{/if}}
         {{/each}}
         </ul>
       </div>
