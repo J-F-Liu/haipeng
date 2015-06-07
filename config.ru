@@ -1,10 +1,8 @@
-require 'project'
-
-root_dir = File.dirname(__FILE__)
+require 'sinatra'
 
 set :environment, ENV['RACK_ENV'].to_sym
-set :root,        root_dir
-set :app_file,    File.join(root_dir, 'project.rb')
 disable :run, :reload
+
+require File.expand_path("../project.rb", __FILE__)
 
 run Sinatra::Application

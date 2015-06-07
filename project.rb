@@ -10,6 +10,11 @@ get :info do
   ].join('<br>')
 end
 
+get :update do
+  `jake html` +
+  'updateed'
+end
+
 get :restart do
   `git pull` +
   `touch tmp/restart.txt` +
