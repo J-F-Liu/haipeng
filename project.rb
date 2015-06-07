@@ -1,6 +1,12 @@
 require 'sinatra'
 require 'json'
 
+set :public_folder, File.dirname(__FILE__) + '/public'
+
+get "/" do
+  redirect 'home.html'
+end
+
 get :info do
   [
     `cat /etc/redhat-release`,
