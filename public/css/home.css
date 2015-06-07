@@ -14,7 +14,7 @@ span{
 #L_cell{
   display:      table-cell;
   width:        33%;
-  height:       400px;
+  height:       300px;
   padding: 0 20px;
   border-right: 1px solid #B7AAA3;
 }
@@ -22,13 +22,13 @@ span{
   display:      table-cell;
   width:        33%;
   padding: 0 20px;
-  height:       400px;
+  height:       300px;
   border-right: 1px solid #B7AAA3;
 }
 #R_cell{
   display:      table-cell;
   width:        34%;
-  height:       400px;
+  height:       300px;
   padding: 0 20px;
  /* border-right: 1px solid #B7AAA3;*/
 }
@@ -77,7 +77,7 @@ h2{
   clear:        both; 
 }
 #M_cell ul{
-  margin-top:     50px;
+  margin-top:     25px;
   list-style-type:  none;
 }
 #M_cell li{
