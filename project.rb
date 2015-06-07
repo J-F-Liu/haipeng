@@ -1,5 +1,5 @@
 require 'sinatra'
-require 'json'
+require 'slim'
 
 set :public_folder, File.dirname(__FILE__) + '/public'
 
@@ -24,15 +24,17 @@ get '/update' do
     `jake html`,
     'updated',
     '</pre>'
-  ].join('\n')
+  ].join
 end
 
 get '/restart' do
   [
+    '<pre>',
     `git pull`,
     `touch tmp/restart.txt`,
-    'restarted'
-  ].join('<br>')
+    'restarted',
+    '</pre>'
+  ].join
 end
 
 get %r{/file/(.*)} do |path|
@@ -50,7 +52,7 @@ get %r{/file/(.*)} do |path|
       end
     end
     @title = 'File List'
-    render :filelist
+    slim :filelist
   elsif File.exist? path
     content_type "text/plain; charset=utf-8"
     send_file path

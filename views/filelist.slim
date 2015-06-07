@@ -1,0 +1,6 @@
+ul
+  - for dir, name in @dirs do
+    li: a href="/file/#{dir}" =name
+ul
+  - for file, name in @files do
+    li: a href="/file/#{file}" =name
