@@ -18,6 +18,7 @@ end
 
 get '/update' do
   `git pull` +
+  `export NODE_PATH=/usr/lib/node_modules` +
   `jake html` +
   'updated'
 end
