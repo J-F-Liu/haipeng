@@ -1,4 +1,5 @@
 var fs=require('fs');
+var path=require('path');
 var handlebars = require('handlebars');
 var browserSync = require('browser-sync').create();
 
@@ -8,6 +9,12 @@ task('html', function(){
   var layout = fs.readFileSync('src/layout.hbs', 'utf8');
   var template = handlebars.compile(layout);
   var sitemap = JSON.parse(fs.readFileSync('src/sitemap.json', 'utf8'));
+
+  var snippets = fs.readdirSync('src/snippet');
+  snippets.forEach(function(filename) {
+    var snippet = fs.readFileSync('src/snippet/' + filename, 'utf8');
+    handlebars.registerPartial('snippet/' + path.basename(filename, '.hbs'), snippet);
+  });
 
   sitemap['pages'].forEach(function(page){
     var content = fs.readFileSync('src/pages/'+page['name']+'.hbs', 'utf8');
