@@ -17,16 +17,22 @@ get '/info' do
 end
 
 get '/update' do
-  `git pull` +
-  `export NODE_PATH=/usr/lib/node_modules` +
-  `jake html` +
-  'updated'
+  [
+    '<pre>',
+    `git pull`,
+    `export NODE_PATH=/usr/lib/node_modules`,
+    `jake html`,
+    'updated',
+    '</pre>'
+  ].join('\n')
 end
 
 get '/restart' do
-  `git pull` +
-  `touch tmp/restart.txt` +
-  'restarted'
+  [
+    `git pull`,
+    `touch tmp/restart.txt`,
+    'restarted'
+  ].join('<br>')
 end
 
 get %r{/file/(.*)} do |path|

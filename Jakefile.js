@@ -24,7 +24,6 @@ task('html', function(){
     });
     context['site'] = sitemap;
     context['page'] = page;
-    console.log(page.showInNav);
     handlebars.registerPartial('content', content);
     var html = template(context);
     fs.writeFileSync('public/'+page['name']+'.html', html);
