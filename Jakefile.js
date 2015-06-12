@@ -1,7 +1,14 @@
 var fs=require('fs');
 var path=require('path');
 var handlebars = require('handlebars');
+var commonmark = require('commonmark');
 var browserSync = require('browser-sync').create();
+
+function setCurrentNavpage(sitemap, page_name){
+  sitemap['pages'].forEach(function(page){
+    page.isCurrent = page.name == page_name;
+  });
+}
 
 desc('Generate html files into public folder.')
 task('html', function(){
@@ -18,16 +25,39 @@ task('html', function(){
 
   sitemap['pages'].forEach(function(page){
     var content = fs.readFileSync('src/pages/'+page['name']+'.hbs', 'utf8');
+    handlebars.registerPartial('content', content);
+    setCurrentNavpage(sitemap, page.name);
     var context = {};
-    sitemap['pages'].forEach(function(page2){
-      page2.isCurrent = page2.name == page.name;
-    });
     context['site'] = sitemap;
     context['page'] = page;
-    handlebars.registerPartial('content', content);
     var html = template(context);
     fs.writeFileSync('public/'+page['name']+'.html', html);
   });
+  
+  var articles = fs.readdirSync('src/article');
+  if(articles.length > 0){
+    jake.mkdirP('public/article');
+    var reader = new commonmark.Parser();
+    var writer = new commonmark.HtmlRenderer();
+    articles.forEach(function(filename) {
+      var article = fs.readFileSync('src/article/' + filename, 'utf8');
+      var parsed = reader.parse(article);
+      var result = writer.render(parsed);
+      handlebars.registerPartial('snippet/news', result);
+      var content = fs.readFileSync('src/pages/news.hbs', 'utf8');
+      handlebars.registerPartial('content', content);
+      setCurrentNavpage(sitemap, 'news');
+      var context = {};
+      context['site'] = sitemap;
+      context['page'] = {
+        "name": "news",
+        "cn_text": "最新动态",
+        "en_text": "Latest News",
+      };
+      var html = template(context);
+      fs.writeFileSync('public/article/'+path.basename(filename, '.md')+'.html', html);
+    });
+  }
 });
 
 // Watch files for changes, process and reload files automatically
@@ -36,7 +66,9 @@ task('serve', ['html'], function () {
   browserSync.watch([
       'src/layout.hbs',
       'src/sitemap.json',
-      'src/pages/*.hbs'
+      'src/pages/*.hbs',
+      'src/snippet/*.hbs',
+      'src/article/*.md'
     ]).on('change', function(){
       jake.Task['html'].execute();
     });

@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{page.cn_text}} - 海鹏化工</title>
   <link type="text/css" rel="stylesheet" href="/bower_components/bootstrap-css/css/bootstrap.css">
-  <link type="text/css" rel="stylesheet" href="css/site.css">
-  <link type="text/css" rel="stylesheet" href="css/{{page.name}}.css">
+  <link type="text/css" rel="stylesheet" href="/css/site.css">
+  <link type="text/css" rel="stylesheet" href="/css/{{page.name}}.css">
   <script>
 var _hmt = _hmt || [];
 (function() {
@@ -21,13 +21,13 @@ var _hmt = _hmt || [];
 <body>
   <div id="container">
     <div id="header">
-      <a href="/"><img id="logo_img" src="image/logo.png" alt="海鹏化工"></a>
+      <a href="/"><img id="logo_img" src="/image/logo.png" alt="海鹏化工"></a>
       <div id="nav">
         <ul id="nav_bar">
         {{#each site.pages}}
           {{#if showInNav}}
           <li{{#if isCurrent}} class="selected"{{/if}}>
-            <a href="{{name}}.html">
+            <a href="/{{name}}.html">
               <div class="Ch_item">{{cn_text}}</div>
               <div class="En_item">{{en_text}}</div>
             </a>
@@ -42,9 +42,9 @@ var _hmt = _hmt || [];
     </div>
     <div id="footer">
       <ul>
-        <li><a href="contact.html">联系我们</a></li>
-        <li><a href="contact.html">客户反馈</a></li>
-        <li><a href="contact.html">诚聘英才</a></li>
+        <li><a href="/contact.html">联系我们</a></li>
+        <li><a href="/contact.html">客户反馈</a></li>
+        <li><a href="/contact.html">诚聘英才</a></li>
         <li><a href="#">官方微博</a></li>
         </li><li><a href="http://www.miitbeian.gov.cn/" target="_blank">沪ICP备15026170号</a></li>
       </ul>
