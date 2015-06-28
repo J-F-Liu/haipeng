@@ -5,8 +5,7 @@ span{
   display:      table;
   height:       250px;
   width: 1200px;
-  margin:       10px auto;
-  padding:      20px;
+  margin:      25px auto;
 }
 #tableRow{
   display:      table-row;
@@ -15,21 +14,21 @@ span{
   display:      table-cell;
   width:        33%;
   height:       300px;
-  padding: 0 20px;
+  padding: 0 25px;
   border-right: 1px solid #B7AAA3;
 }
 #M_cell{
   display:      table-cell;
   width:        33%;
-  padding: 0 20px;
+  padding: 0 25px;
   height:       300px;
   border-right: 1px solid #B7AAA3;
 }
 #R_cell{
   display:      table-cell;
   width:        34%;
+  padding: 0 25px 0 25px;
   height:       300px;
-  padding: 0 20px;
  /* border-right: 1px solid #B7AAA3;*/
 }
 h2{
@@ -76,11 +75,12 @@ h2{
   border-width:     1px;
   clear:        both; 
 }
-#M_cell ul{
-  margin-top:     25px;
-  list-style-type:  none;
+#M_cell ul, #R_cell ul{
+  margin-top:     20px;
+  padding-left:   20px;
+/*  list-style-type:  none;*/
 }
-#M_cell li{
+#M_cell li, #R_cell li{
   font-weight:    bold; 
   font-family:    "宋体";
   letter-spacing:   1px;
