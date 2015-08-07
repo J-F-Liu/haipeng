@@ -1,0 +1,22 @@
+<div id="slogan">
+  <img src="image/banner5.jpg" />
+</div>
+<div id="Prcontent">
+  <div id="title">
+    <img src="image/star.png" class="star">
+	<h3>产品质检单</h3>
+  </div>
+  <div>
+	  <ul>
+      {{#each page.certificates}}
+		  <li>{{product}}
+			  <ol>
+        {{#each images}}
+				  <li><a href="/certificate/{{url}}" target="_blank">{{name}}</a></li>
+        {{/each}}
+			  </ol>
+		  </li>
+      {{/each}}
+	  </ul>
+  </div>
+</div>

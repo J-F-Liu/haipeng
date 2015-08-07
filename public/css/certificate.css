@@ -2,9 +2,11 @@
 	width: 			1200px;
 	margin: 		0px auto;
 }
-#abstract{
-	width: 			690px;
-	float: 			left;
+ul > li{
+	margin-bottom: 0.5em;
+}
+ul ol{
+	margin-left: 2em;
 }
 .star{
 	float: 				left;

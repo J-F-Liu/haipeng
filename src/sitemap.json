@@ -24,6 +24,11 @@
       "en_text": "Our Storage"
     },
     {
+      "name": "certificate",
+      "cn_text": "产品质检单",
+      "en_text": "Certificates"
+    },
+    {
       "name": "news",
       "cn_text": "最新动态",
       "en_text": "Latest News",

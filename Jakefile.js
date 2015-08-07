@@ -10,6 +10,22 @@ function setCurrentNavpage(sitemap, page_name){
   });
 }
 
+function getCertificates(){
+  var certificates = [];
+  var products = ["丙酮","乙二醇","二甘醇","二甲苯","甲苯","甲醇"];
+  var images = fs.readdirSync('public/certificate');
+  for(var product of products){
+    certificate_images = [];
+    for(var imagename of images){
+      if(imagename.indexOf(product) >= 0){
+        certificate_images.push({name: path.basename(imagename, path.extname(imagename)), url: encodeURI(imagename)});
+      }
+    }
+    certificates.push({product: product, images: certificate_images})
+  }
+  return certificates;
+}
+
 desc('Generate html files into public folder.')
 task('html', function(){
   console.log('Generating html files...');
@@ -27,6 +43,9 @@ task('html', function(){
     var content = fs.readFileSync('src/pages/'+page['name']+'.hbs', 'utf8');
     handlebars.registerPartial('content', content);
     setCurrentNavpage(sitemap, page.name);
+    if(page.name == "certificate"){
+      page.certificates = getCertificates();
+    }
     var context = {};
     context['site'] = sitemap;
     context['page'] = page;
