@@ -14,7 +14,7 @@ span{
   display:      table-cell;
   width:        33%;
   height:       300px;
-  padding: 0 15px;
+  padding: 0 25px;
   border-right: 1px solid #B7AAA3;
 }
 #M_cell{
@@ -65,7 +65,7 @@ h2{
   text-decoration:  none;
 }
 #L_cell p{
-  padding-top:    25px; 
+  padding-top:    15px; 
   font-weight:    bold; 
   font-family:    "宋体";
   color:        rgba(0,0,0,0.6);
